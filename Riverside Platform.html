@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riverside Platform — Unified District OS</title>
+
+<!-- MIT STEM² design-system tokens + styles -->
+<link rel="stylesheet" href="_ds/mit-stem-design-system-177606bd-3ede-4319-9480-0b4dabe10a75/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/mit-stem-design-system-177606bd-3ede-4319-9480-0b4dabe10a75/tokens/colors.css">
+<link rel="stylesheet" href="_ds/mit-stem-design-system-177606bd-3ede-4319-9480-0b4dabe10a75/tokens/typography.css">
+<link rel="stylesheet" href="_ds/mit-stem-design-system-177606bd-3ede-4319-9480-0b4dabe10a75/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/mit-stem-design-system-177606bd-3ede-4319-9480-0b4dabe10a75/tokens/elevation.css">
+<link rel="stylesheet" href="_ds/mit-stem-design-system-177606bd-3ede-4319-9480-0b4dabe10a75/tokens/base.css">
+<link rel="stylesheet" href="_ds/mit-stem-design-system-177606bd-3ede-4319-9480-0b4dabe10a75/styles.css">
+
+<style>
+  html, body { margin: 0; height: 100%; background: var(--surface-page); }
+  #root { height: 100%; }
+  .rp-row:hover { background: var(--neutral-50); }
+  .rp-rolecard:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); border-color: var(--purple-200); }
+  @keyframes rp-blink { 0%, 100% { opacity: .25; } 50% { opacity: 1; } }
+  @keyframes rp-msg-in { from { transform: translateY(9px); } to { transform: translateY(0); } }
+  @keyframes rp-pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .35; transform: scale(.8); } }
+  @keyframes rp-toast-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  .rp-msg { animation: rp-msg-in .42s var(--ease-out); }
+  .rp-livedot { animation: rp-pulse 1.6s ease-in-out infinite; }
+  ::-webkit-scrollbar { width: 11px; height: 11px; }
+  ::-webkit-scrollbar-thumb { background: var(--neutral-300); border-radius: 6px; border: 3px solid var(--surface-page); }
+  ::-webkit-scrollbar-thumb:hover { background: var(--neutral-400); }
+  @media (max-width: 760px) { .rp-hide-sm { display: none !important; } }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<!-- React + Babel -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<!-- MIT STEM² component bundle (plain JS, after React) -->
+<script src="_ds/mit-stem-design-system-177606bd-3ede-4319-9480-0b4dabe10a75/_ds_bundle.js"></script>
+
+<!-- Data + icons (plain JS, need React global) -->
+<script src="app/data.js"></script>
+<script src="app/icons.jsx"></script>
+
+<!-- Shared UI + roles + app (JSX, via Babel) -->
+<script type="text/babel" src="app/ui-core.jsx"></script>
+<script type="text/babel" src="app/ui-shell.jsx"></script>
+<script type="text/babel" src="app/ui-shell2.jsx"></script>
+<script type="text/babel" src="app/ui-extra.jsx"></script>
+<script type="text/babel" src="app/brain.jsx"></script>
+<script type="text/babel" src="app/recruitment.jsx"></script>
+<script type="text/babel" src="app/roles-leadership.jsx"></script>
+<script type="text/babel" src="app/roles-instruction.jsx"></script>
+<script type="text/babel" src="app/roles-office.jsx"></script>
+<script type="text/babel" src="app/roles-family.jsx"></script>
+<script type="text/babel" src="app/main.jsx"></script>
+</body>
+</html>

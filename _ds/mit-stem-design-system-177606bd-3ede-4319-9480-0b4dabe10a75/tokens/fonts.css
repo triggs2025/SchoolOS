@@ -1,0 +1,9 @@
+/* ============================================================
+   MIT STEM² — Webfonts
+   SUBSTITUTION NOTE: the official crest wordmark uses a custom
+   engraved serif. Source Serif 4 is the nearest open match
+   (transitional, sturdy, high legibility). If brand-exact font
+   files exist, drop them in /assets/fonts and replace this file.
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700;8..60,900&family=Source+Sans+3:wght@400;500;600;700&family=Source+Code+Pro:wght@400;500;600&display=swap");

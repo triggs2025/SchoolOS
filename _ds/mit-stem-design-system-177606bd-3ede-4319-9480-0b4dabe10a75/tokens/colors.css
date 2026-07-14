@@ -1,0 +1,115 @@
+/* ============================================================
+   MIT STEM² — Color tokens
+   Brand: deep eggplant purple (#4C2959) + metallic gold (#BD9C28)
+   Sampled directly from the official eagle-crest wordmark.
+   ============================================================ */
+
+:root {
+  /* ---- Brand: Purple (primary) ---------------------------- */
+  --purple-50:  #f5f1f7;
+  --purple-100: #e8dded;
+  --purple-200: #cbb6d4;
+  --purple-300: #a987b6;
+  --purple-400: #7d5490;
+  --purple-500: #4c2959; /* BASE — official brand purple */
+  --purple-600: #41234c;
+  --purple-700: #341c3d;
+  --purple-800: #28162f;
+  --purple-900: #1b0f20;
+
+  /* ---- Brand: Gold (secondary) ---------------------------- */
+  --gold-50:  #fbf7e7;
+  --gold-100: #f5ecc1;
+  --gold-200: #e8d684;
+  --gold-300: #d9bf49;
+  --gold-400: #cba932;
+  --gold-500: #bd9c28; /* BASE — official brand gold */
+  --gold-600: #9c7f1e;
+  --gold-700: #7a6318;
+  --gold-800: #5b4a14;
+  --gold-900: #3d3110;
+
+  /* ---- Neutrals (warm gray, faint purple cast) ------------ */
+  --white:      #ffffff;
+  --neutral-50:  #f8f7f9;
+  --neutral-100: #f0eef2;
+  --neutral-200: #e2dfe5;
+  --neutral-300: #cac4cf;
+  --neutral-400: #a39ca9;
+  --neutral-500: #7c7483;
+  --neutral-600: #5e5765;
+  --neutral-700: #443f4a;
+  --neutral-800: #2c2830;
+  --neutral-900: #1a171d;
+  --ink:         #14111a;
+
+  /* ---- Semantic status (muted, academic) ------------------ */
+  --green-100: #dcefe1;
+  --green-500: #2f8a55;
+  --green-700: #1f5e3a;
+  --amber-100: #fbeecb;
+  --amber-500: #c98a16;
+  --amber-700: #8a5d0c;
+  --red-100:   #f7dcdc;
+  --red-500:   #c0392b;
+  --red-700:   #861f15;
+  --blue-100:  #d8e6f6;
+  --blue-500:  #2c6fae;
+  --blue-700:  #1c4d7d;
+
+  /* ========================================================
+     Semantic aliases — reference these in components
+     ======================================================== */
+
+  /* Brand intents */
+  --color-primary:        var(--purple-500);
+  --color-primary-hover:  var(--purple-600);
+  --color-primary-active: var(--purple-700);
+  --color-primary-subtle: var(--purple-50);
+  --color-accent:         var(--gold-500);
+  --color-accent-hover:   var(--gold-600);
+  --color-accent-subtle:  var(--gold-50);
+  --color-on-primary:     var(--white);
+  --color-on-accent:      var(--purple-700);
+
+  /* Text */
+  --text-default:  var(--neutral-900);
+  --text-body:     var(--neutral-800);
+  --text-muted:    var(--neutral-600);
+  --text-subtle:   var(--neutral-500);
+  --text-inverse:  var(--white);
+  --text-brand:    var(--purple-500);
+  --text-accent:   var(--gold-700);
+  --text-link:     var(--purple-500);
+  --text-link-hover: var(--gold-700);
+
+  /* Surfaces */
+  --surface-page:    var(--neutral-50);
+  --surface-card:    var(--white);
+  --surface-raised:  var(--white);
+  --surface-sunken:  var(--neutral-100);
+  --surface-brand:   var(--purple-500);
+  --surface-brand-deep: var(--purple-700);
+  --surface-accent:  var(--gold-500);
+  --surface-inverse: var(--ink);
+
+  /* Borders */
+  --border-subtle:  var(--neutral-200);
+  --border-default: var(--neutral-300);
+  --border-strong:  var(--neutral-400);
+  --border-brand:   var(--purple-500);
+  --border-accent:  var(--gold-500);
+
+  /* Status */
+  --status-success-fg: var(--green-700);
+  --status-success-bg: var(--green-100);
+  --status-warning-fg: var(--amber-700);
+  --status-warning-bg: var(--amber-100);
+  --status-danger-fg:  var(--red-700);
+  --status-danger-bg:  var(--red-100);
+  --status-info-fg:    var(--blue-700);
+  --status-info-bg:    var(--blue-100);
+
+  /* Focus ring (gold, for visibility on purple chrome) */
+  --focus-ring: var(--gold-400);
+}
